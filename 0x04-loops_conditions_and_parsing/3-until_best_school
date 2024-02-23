@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # print loop of sentence
 i=0 
-until [ i -lq 10 ]
+until [ $i -gt 9 ]
 do
 echo "Best School"
 ((i++)) 
