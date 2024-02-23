@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# print loop of sentence
+i=0 
+until [ i -lq 10 ]
+do
+echo "Best School"
+((i++)) 
+done
