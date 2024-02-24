@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# print loop of sentence
+for i in ./*
+do
+	echo "$i" | cut -f2 -d "-"
+done
