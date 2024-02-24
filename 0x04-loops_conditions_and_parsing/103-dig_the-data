@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 # advanced task
-awk '{print $1 " " $9}' < apache-access.log | sort
+if [ -s apache-access.log ]
+then
+	awk '{print $1 " " $9}' < apache-access.log | sort
+fi
