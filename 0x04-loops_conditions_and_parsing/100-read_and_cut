@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
-# print loop of sentence
-cut -f1,3,6 -d ":" /etc/passwd
+# advanced task
+while IFS=: read -r username _ userid _ _ homedir _
+do
+    echo "$username:$userid:$homedir"
+done < /etc/passwd
