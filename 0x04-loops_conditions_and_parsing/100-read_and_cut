@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# print loop of sentence
+cut -f1,3,6 -d ":" /etc/passwd
