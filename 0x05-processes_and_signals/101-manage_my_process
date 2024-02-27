@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# all process
+/etc/init.d start manage_my_process
+echo "$$" > /var/run/my_process.pid
+echo "manage_my_process started"
+/etc/init.d stop manage_my_process
+rm -f /var/run/my_process.pid
+echo "manage_my_process stopped"
+/etc/init.d restart manage_my_process
+echo "$$" > /var/run/my_process.pid
+echo "manage_my_process restarted"
