@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# OSI model 
+echo "1"
+echo "2"
+echo "1"
